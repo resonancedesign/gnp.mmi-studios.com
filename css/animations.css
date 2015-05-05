@@ -1,0 +1,131 @@
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade {
+  0%   { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+@keyframes fade {
+  0%   { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+@-webkit-keyframes logo-move {
+    0% { 
+        left: -80%;
+        opacity: 0;
+    }
+    100% {
+        left: 0%; 
+        opacity: 1;
+    }
+}
+
+@keyframes logo-move {
+    0% { 
+        left: -80%;
+        opacity: 0;
+    }
+    100% {
+        left: 0%; 
+        opacity: 1;
+    }
+}
+
+img.social-icon {
+    opacity: 1;
+
+    /*animation-name*/
+    -webkit-animation-name: fade;
+    -moz-animation-name: fade;
+    -ms-animation-name: fade;
+    -o-animation-name: fade;
+    animation-name: fade;
+
+    /*animation-duration*/
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+
+    /*animation-timing-function*/
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -ms-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+
+    /*animation-iteration-count*/
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+img.bg.visible{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+img.logo {
+    width: 524px;
+    margin: auto;
+    position: relative;
+    left: -80%;
+
+    /*animation-name*/
+    -webkit-animation-name: logo-move;
+    -moz-animation-name: logo-move;
+    -ms-animation-name: logo-move;
+    -o-animation-name: logo-move;
+    animation-name: logo-move;
+
+    /*animation-duration*/
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+
+    /*animation-timing-function*/
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -ms-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+
+    /*animation-iteration-count*/
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /*animation-delay*/
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+img.logo.visible {
+    left: 0;
+    opacity: 1;
+}
